@@ -3,7 +3,7 @@
 
 function ld() {
 	console.log("Load Done");
-	console.log("%c欢迎来到NtCot的奇妙灵堂 ", "font-family: dengxian;font-weight: 300;color: red;font-size: 100px;text-shadow: 0px 0px 6px #CCC;");
+	console.log("%c欢迎来到丁泽轩的奇妙灵堂 ", "font-family: dengxian;font-weight: 300;color: red;font-size: 100px;text-shadow: 0px 0px 6px #CCC;");
 	if (userAgent.indexOf("Firefox") > -1) {
 	} else {
 		$('#sb').css('filter','saturate(0)');
