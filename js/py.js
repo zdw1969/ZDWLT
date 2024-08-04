@@ -4,6 +4,10 @@
 function ld() {
     console.log("Load Done");
     console.log("%c欢迎来到张东伟的奇妙灵堂 ", "font-family: dengxian;font-weight: 300;color: red;font-size: 100px;text-shadow: 0px 0px 6px #CCC;");
+
+    // 禁用音频控件的播放按钮
+    document.getElementById("playera").controls = false;
+
     if (userAgent.indexOf("Firefox") > -1) {
     } else {
         $('#sb').css('filter','saturate(0)');
@@ -11,6 +15,9 @@ function ld() {
     setTimeout(function () {
         draw();
         freezeAllGifs();
+
+        // 加载完成后启用音频控件
+        document.getElementById("playera").controls = true;
     }, 500);
 }
 
